@@ -4,33 +4,183 @@
     box-sizing: border-box;
 }
 
-{
-    
+html {
+    background: rgb(0, 157, 255);
+    background: linear-gradient( rgba(255, 180, 157, 0.516) 0%, blanchedalmond 35%, rgba(6, 221, 237, 0.082) 100%);
 }
 
-h1 {
-    color: blanchedalmond;
-    background: rgb(255, 69, 45);
-    font: 40px;
-    font-weight: 800;
-    border: 1px solid powderblue;
-    padding: 20px;
-    margin-top: 200px;
-    border-radius: 50px;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* main's */
+
+#mainHome, #mainVerkoop, #mainContact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-bottom: black;
+    align-items: center;
+    margin: 3em;
+}
+
+#mainSleutelen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: black;
+    margin: 3em;
+}
+
+.fullWidthAndHeight {
+    width: 100%;
+    height: 100%;
 }
 
 h2 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    text-align: center;
 }
 
-header {
-    background-color: chartreuse;
+h3 {
+    font-size: 50px;
+    text-align: center;
 }
-nav {
-    background-color: rgb(150, 32, 0);
+
+/* header */
+
+.button {
+    padding: 0.2em;
+    margin: 0.5em;
+    font-size: 4em;
+    border: solid black;
+    border-radius: 0.3em;
+}
+
+.button:hover {
+    background: black;
+    color: blanchedalmond;
+    border-radius: 0.2em;
+    font-size: 5em;
+    transition: all;
+    transition-duration: 0.3s;
 }
 
 nav ul {
-    background-color: rgb(150, 32, 0);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    font-size: 30px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: rgb(234, 216, 190);
+    margin-bottom: 0px;
+    font-weight: 600;
+    border-bottom: solid;
+}
+
+nav li a {
+    color: rgb(45, 45, 45);
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color:transparent;
+    margin: 10px;
+    transition-duration: 0.3s;
+    font-size: 1.05em ;
+}
+
+nav a:active {
+    color: rgb(140, 140, 140);
+    transition-duration: 0.1s;
+}
+
+/* algemeen section */
+
+section {
+    align-items: center;
+    border-radius: 25px;
+    border: 2px solid #adadad;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0px;
+}
+
+/* welkom */
+
+.welkomtekst {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+main img {
+    width: 200px;
+}
+
+/* sleutelen */
+
+.carbUitlegEnFoto {
+    padding-left: 40px;
+    padding-top: 30px;
+    width: 600px;
+    height: 1750px;
+}
+
+#carbfoto {
+    padding-top: 50px;
+    height: 650px;
+    width: auto;
+}
+#carbfotodetail {
+    height: 600px;
+    width: auto;
+}
+
+.bandenVervangen {
+    width: 600px;
+    padding-left: 40px;
+}
+
+#bandenfotoMargin {
+    margin-top: 50px;
+}
+
+#bandenfotoMargin, #bandenfoto2, #bandenfoto3 {
+width: 500px;
+}
+
+/* verkoop */
+
+.tekstmijnverkoop {
+width: 60%;
+margin:2em;
+}
+
+#fotobrommer {
+    width: 80%;
+    margin: 50px;
+}
+
+.marktplaatsLink {
+    width: 40%;
+    text-decoration: none;
+}
+
+ /* contact */
+
+.telefoon, .email {
+    width: 50%;
+}
+
+footer {
+    border-top: solid;
+    background-color: rgb(227, 227, 227);
+    color:rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
 }
