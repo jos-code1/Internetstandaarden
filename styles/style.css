@@ -5,31 +5,18 @@
 }
 
 html {
-    background: rgb(0, 157, 255);
-    background: linear-gradient( rgba(255, 180, 157, 0.516) 0%, blanchedalmond 35%, rgba(6, 221, 237, 0.082) 100%);
+    background: rgb(255, 38, 0);
+    background: linear-gradient( rgba(255, 60, 0, 0.516) 0%, rgba(121, 52, 9, 0.991) 35%, rgba(255, 81, 0, 0.082) 100%);
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* main's */
-
-#mainHome, #mainVerkoop, #mainContact {
+main {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    border-bottom: black;
-    align-items: center;
-    margin: 3em;
-}
-
-#mainSleutelen {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    border-bottom: black;
-    margin: 3em;
+    margin: 150px;
 }
 
 .fullWidthAndHeight {
@@ -42,12 +29,9 @@ h2 {
     text-align: center;
 }
 
-h3 {
-    font-size: 50px;
-    text-align: center;
+main img {
+    width: 150px;
 }
-
-/* header */
 
 .button {
     padding: 0.2em;
@@ -66,121 +50,44 @@ h3 {
     transition-duration: 0.3s;
 }
 
+footer {
+    color:darkred;
+    padding: 5px;
+    text-align: center;
+}
+
 nav ul {
-    position: fixed;
-    top: 0;
-    width: 100%;
     list-style-type: none;
     font-size: 30px;
     padding: 5px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: rgb(234, 216, 190);
+    background-color: rgb(150, 32, 0);
     margin-bottom: 0px;
     font-weight: 600;
-    border-bottom: solid;
 }
 
 nav li a {
-    color: rgb(45, 45, 45);
+    color: white;
     text-decoration: none;
 }
 
 nav a:hover {
-    background-color:transparent;
-    margin: 10px;
+    background-color: rgba(150, 32, 0, 0.564);
+    color: rgb(255, 128, 93); 
     transition-duration: 0.3s;
-    font-size: 1.05em ;
+    font-size: 1.1em ;
 }
 
 nav a:active {
-    color: rgb(140, 140, 140);
-    transition-duration: 0.1s;
+    color: black;
 }
-
-/* algemeen section */
 
 section {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    border-radius: 25px;
-    border: 2px solid #adadad;
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-    margin: 0px;
-}
-
-/* welkom */
-
-.welkomtekst {
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-main img {
-    width: 200px;
-}
-
-/* sleutelen */
-
-.carbUitlegEnFoto {
-    padding-left: 40px;
-    padding-top: 30px;
-    width: 600px;
-    height: 1750px;
-}
-
-#carbfoto {
-    padding-top: 50px;
-    height: 650px;
-    width: auto;
-}
-#carbfotodetail {
-    height: 600px;
-    width: auto;
-}
-
-.bandenVervangen {
-    width: 600px;
-    padding-left: 40px;
-}
-
-#bandenfotoMargin {
-    margin-top: 50px;
-}
-
-#bandenfotoMargin, #bandenfoto2, #bandenfoto3 {
-width: 500px;
-}
-
-/* verkoop */
-
-.tekstmijnverkoop {
-width: 60%;
-margin:2em;
-}
-
-#fotobrommer {
     width: 80%;
-    margin: 50px;
-}
-
-.marktplaatsLink {
-    width: 40%;
-    text-decoration: none;
-}
-
- /* contact */
-
-.telefoon, .email {
-    width: 50%;
-}
-
-footer {
-    border-top: solid;
-    background-color: rgb(227, 227, 227);
-    color:rgb(0, 0, 0);
-    padding: 5px;
+    padding-left: 20%;
     text-align: center;
 }
