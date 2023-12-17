@@ -7,18 +7,21 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: rgb(0, 157, 255);
-    background: linear-gradient( rgba(255, 180, 157, 0.516) 0%, blanchedalmond 35%, rgba(6, 221, 237, 0.082) 100%);
+    background: linear-gradient(rgba(255, 180, 157, 0.516) 0%, blanchedalmond 35%, rgba(6, 221, 237, 0.082) 100%);
     /* bron:https://cssgradient.io/ */
 }
 
-/* main's */
+/* standaarden */
 
 main {
     display: flex;
     flex-direction: column;
-    border-bottom: black;
     align-items: center;
     margin: 3em;
+}
+
+main img {
+    width: 200px;
 }
 
 .fullWidthAndHeight {
@@ -83,10 +86,10 @@ nav li a {
 }
 
 nav a:hover {
-    background-color:transparent;
+    background-color: transparent;
     margin: 10px;
     transition-duration: 0.3s;
-    font-size: 1.05em ;
+    font-size: 1.05em;
 }
 
 nav a:active {
@@ -114,19 +117,24 @@ section li {
 /* welkom */
 
 .welkomtekst {
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .welkomtekst p {
     margin: 10px;
 }
 
-main img {
-    width: 200px;
+/* sleutelen */
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-/* sleutelen */
+main h1 {
+    text-align: center;
+}
 
 .carbUitlegEnFoto {
     margin-left: 20%;
@@ -150,35 +158,86 @@ main img {
     width: 400px;
     max-width: 300px;
 }
+
+.carb,
+.banden {
+    margin: 30px;
+    padding-bottom: 70px;
+}
+
+.carb img,
+.banden img {
+    width: 300px;
+}
+
+.carb h2,
+.banden h2 {
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: rgb(112, 112, 112);
+    margin: -40px;
+}
+
+@keyframes scaleImage {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.carb:hover,
+.banden:hover {
+    animation: scaleImage .25s forwards;
+}
+
+/* Bron animatie scale en scale behouden: https://stackoverflow.com/questions/42632767/css-animation-grow-from-center-zoom-from-center-dot-to-full-container   -   https://stackoverflow.com/questions/12991164/maintaining-the-final-state-at-end-of-a-css-animation */
+
+.carb a,
+.banden a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+.carb a:active,
+.banden a:active {
+    opacity: 0.3;
+}
+
+/* bron code voor opacity: https://www.webucator.com/article/how-to-use-the-css-opacity-property/#:~:text=To%20make%20the%20caption%20opaque,opacity%20to%201%20on%20hover.&text=Open%20the%20HTML%20page%20in,caption%20to%20see%20it%20change. */
+
 /* verkoop */
 
 .tekstmijnverkoop {
-width: 60%;
-margin:2em;
+    width: 65vw;
 }
 
 .tekstmijnverkoop p {
     margin: 10px;
 }
 
-#fotobrommer {
+.tekstmijnverkoop img {
     width: 90%;
-    margin: 30px;
+    margin: 0px;
 }
 
 .marktplaatsLink {
-    width: 40%;
+    width: 50vw;
+    margin-bottom: 30px;
 }
 
 .marktplaatsLink:active {
-    font-size: 0.9em;
-    transition-duration: 0.3s;
+    font-size: 1.2em;
+    transition-duration: 0.1s;
 }
 
- /* contact */
+/* contact */
 
 .contactinfo {
-    width: 50%;
+    margin-left: 50%;
+    margin-right: 50%;
+    width: 50vw;
 }
 
 .contactinfo h2 {
@@ -188,7 +247,7 @@ margin:2em;
 footer {
     border-top: solid;
     background-color: rgb(227, 227, 227);
-    color:rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
     padding: 5px;
     text-align: center;
 }
